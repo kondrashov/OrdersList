@@ -41,6 +41,10 @@
     [super setSelected:selected animated:animated];
 }
 
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
+{
+}
+
 #pragma mark - Public methods
 
 + (CGFloat)cellHeight

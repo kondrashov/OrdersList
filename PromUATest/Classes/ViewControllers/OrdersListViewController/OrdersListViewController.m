@@ -135,6 +135,7 @@
     if(!_searchView)
     {
         _searchView = [[SearchView alloc] initWithDelegate:self];
+        _searchView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:_searchView];
     }
 }
@@ -262,7 +263,9 @@
 - (void)keyboardDidShow:(NSNotification *)notification
 {
     CGSize keyboardSize = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    _ordersTableView.height = self.view.height - _searchView.bottomY - keyboardSize.height;
+
+    if(keyboardSize.height * keyboardSize.width > 0)
+        _ordersTableView.height = self.view.height - _searchView.bottomY - keyboardSize.height;
 }
 
 - (void)keyboardWillHide:(NSNotification *)notification

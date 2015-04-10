@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-gJ-s1G">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-gJ-s1G">
                     <rect key="frame" x="12" y="7" width="232" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -19,7 +19,7 @@
                         <outlet property="delegate" destination="sTr-ic-5Do" id="gyr-LS-raK"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-Ev-OnG">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-Ev-OnG">
                     <rect key="frame" x="252" y="7" width="55" height="30"/>
                     <state key="normal" title="Отмена">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,9 +30,16 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KNE-gJ-s1G" firstAttribute="leading" secondItem="sTr-ic-5Do" secondAttribute="leading" constant="12" id="DIh-Kh-cJr"/>
+                <constraint firstItem="F9M-Ev-OnG" firstAttribute="top" secondItem="sTr-ic-5Do" secondAttribute="top" constant="7" id="Dpf-2J-Oyv"/>
+                <constraint firstItem="F9M-Ev-OnG" firstAttribute="leading" secondItem="KNE-gJ-s1G" secondAttribute="trailing" constant="8" id="X2Q-vn-2vI"/>
+                <constraint firstItem="KNE-gJ-s1G" firstAttribute="top" secondItem="sTr-ic-5Do" secondAttribute="top" constant="7" id="hgg-AJ-sIB"/>
+                <constraint firstAttribute="trailing" secondItem="KNE-gJ-s1G" secondAttribute="trailing" constant="76" id="n5F-Qg-bg1"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="193" y="351"/>
+            <point key="canvasLocation" x="276" y="305"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
