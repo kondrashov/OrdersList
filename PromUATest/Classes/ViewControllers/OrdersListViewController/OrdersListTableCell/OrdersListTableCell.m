@@ -31,6 +31,8 @@
 
 - (void)prepareForReuse
 {
+    [super prepareForReuse];
+    
     self.lblDateTime.text = @"";
     self.lblBottom.text = @"";
     self.lblTop.text = @"";

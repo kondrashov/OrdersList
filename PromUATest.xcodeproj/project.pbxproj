@@ -25,13 +25,21 @@
 		290D6C851AD412F000D1DF4D /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 290D6C841AD412F000D1DF4D /* Helpers.m */; };
 		290D6C881AD4568500D1DF4D /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 290D6C871AD4568500D1DF4D /* Order.m */; };
 		290D6C8B1AD456A100D1DF4D /* OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 290D6C8A1AD456A100D1DF4D /* OrderItem.m */; };
+		2975532D1AD84886001BE272 /* WebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2975532C1AD84886001BE272 /* WebImageView.m */; };
+		297553301AD84943001BE272 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2975532F1AD84943001BE272 /* UIImage+Additions.m */; };
+		297553341AD8E408001BE272 /* OrderDetailTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 297553331AD8E408001BE272 /* OrderDetailTableHeader.m */; };
+		297553361AD8E412001BE272 /* OrderDetailTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297553351AD8E412001BE272 /* OrderDetailTableHeader.xib */; };
 		297AD9561AD7CD7100820411 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AD9551AD7CD7100820411 /* UIView+Additions.m */; };
 		297AD95B1AD7CE0900820411 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AD95A1AD7CE0900820411 /* SearchView.m */; };
 		297AD95D1AD7CE1400820411 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297AD95C1AD7CE1400820411 /* SearchView.xib */; };
-		297AD9611AD7D76100820411 /* OrdersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AD9601AD7D76100820411 /* OrdersListViewController.m */; };
-		297AD9651AD7D78300820411 /* OrdersListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AD9631AD7D78300820411 /* OrdersListTableCell.m */; };
-		297AD9661AD7D78300820411 /* OrdersListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297AD9641AD7D78300820411 /* OrdersListTableCell.xib */; };
 		297AD9691AD7D85900820411 /* UITableViewCell+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AD9681AD7D85900820411 /* UITableViewCell+Additions.m */; };
+		29D78DCF1AD82697006E67C1 /* OrdersListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D78DCB1AD82697006E67C1 /* OrdersListTableCell.m */; };
+		29D78DD01AD82697006E67C1 /* OrdersListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29D78DCC1AD82697006E67C1 /* OrdersListTableCell.xib */; };
+		29D78DD11AD82697006E67C1 /* OrdersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D78DCE1AD82697006E67C1 /* OrdersListViewController.m */; };
+		29D78DD51AD826DB006E67C1 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D78DD41AD826DB006E67C1 /* OrderDetailViewController.m */; };
+		29D78DD91AD82C58006E67C1 /* OrderDetailCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D78DD81AD82C58006E67C1 /* OrderDetailCollectionCell.m */; };
+		29D78DDD1AD8371D006E67C1 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D78DDC1AD8371D006E67C1 /* OrderDetailTableCell.m */; };
+		29D78DDF1AD83727006E67C1 /* OrderDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29D78DDE1AD83727006E67C1 /* OrderDetailTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,18 +90,32 @@
 		290D6C891AD456A100D1DF4D /* OrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderItem.h; sourceTree = "<group>"; };
 		290D6C8A1AD456A100D1DF4D /* OrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItem.m; sourceTree = "<group>"; };
 		2954D1F31AD56DA00072A90F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2975532B1AD84886001BE272 /* WebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebImageView.h; sourceTree = "<group>"; };
+		2975532C1AD84886001BE272 /* WebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageView.m; sourceTree = "<group>"; };
+		2975532E1AD84943001BE272 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		2975532F1AD84943001BE272 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		297553321AD8E408001BE272 /* OrderDetailTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailTableHeader.h; sourceTree = "<group>"; };
+		297553331AD8E408001BE272 /* OrderDetailTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailTableHeader.m; sourceTree = "<group>"; };
+		297553351AD8E412001BE272 /* OrderDetailTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailTableHeader.xib; sourceTree = "<group>"; };
 		297AD9541AD7CD7100820411 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		297AD9551AD7CD7100820411 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		297AD9591AD7CE0900820411 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
 		297AD95A1AD7CE0900820411 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
 		297AD95C1AD7CE1400820411 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
-		297AD95F1AD7D76100820411 /* OrdersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrdersListViewController.h; path = OrdersListViewController/OrdersListViewController.h; sourceTree = "<group>"; };
-		297AD9601AD7D76100820411 /* OrdersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrdersListViewController.m; path = OrdersListViewController/OrdersListViewController.m; sourceTree = "<group>"; };
-		297AD9621AD7D78300820411 /* OrdersListTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersListTableCell.h; sourceTree = "<group>"; };
-		297AD9631AD7D78300820411 /* OrdersListTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersListTableCell.m; sourceTree = "<group>"; };
-		297AD9641AD7D78300820411 /* OrdersListTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersListTableCell.xib; sourceTree = "<group>"; };
 		297AD9671AD7D85900820411 /* UITableViewCell+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Additions.h"; sourceTree = "<group>"; };
 		297AD9681AD7D85900820411 /* UITableViewCell+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Additions.m"; sourceTree = "<group>"; };
+		29D78DCA1AD82697006E67C1 /* OrdersListTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersListTableCell.h; sourceTree = "<group>"; };
+		29D78DCB1AD82697006E67C1 /* OrdersListTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersListTableCell.m; sourceTree = "<group>"; };
+		29D78DCC1AD82697006E67C1 /* OrdersListTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersListTableCell.xib; sourceTree = "<group>"; };
+		29D78DCD1AD82697006E67C1 /* OrdersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersListViewController.h; sourceTree = "<group>"; };
+		29D78DCE1AD82697006E67C1 /* OrdersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersListViewController.m; sourceTree = "<group>"; };
+		29D78DD31AD826DB006E67C1 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		29D78DD41AD826DB006E67C1 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		29D78DD71AD82C58006E67C1 /* OrderDetailCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailCollectionCell.h; sourceTree = "<group>"; };
+		29D78DD81AD82C58006E67C1 /* OrderDetailCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailCollectionCell.m; sourceTree = "<group>"; };
+		29D78DDB1AD8371D006E67C1 /* OrderDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailTableCell.h; sourceTree = "<group>"; };
+		29D78DDC1AD8371D006E67C1 /* OrderDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailTableCell.m; sourceTree = "<group>"; };
+		29D78DDE1AD83727006E67C1 /* OrderDetailTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,12 +302,30 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		2975532A1AD84874001BE272 /* WebImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2975532B1AD84886001BE272 /* WebImageView.h */,
+				2975532C1AD84886001BE272 /* WebImageView.m */,
+			);
+			path = WebImageView;
+			sourceTree = "<group>";
+		};
+		297553311AD8E3F8001BE272 /* OrderDetailTableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				297553321AD8E408001BE272 /* OrderDetailTableHeader.h */,
+				297553331AD8E408001BE272 /* OrderDetailTableHeader.m */,
+				297553351AD8E412001BE272 /* OrderDetailTableHeader.xib */,
+			);
+			path = OrderDetailTableHeader;
+			sourceTree = "<group>";
+		};
 		297AD94E1AD7CA9F00820411 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				297AD95E1AD7D76100820411 /* OrdersListTableCell */,
-				297AD95F1AD7D76100820411 /* OrdersListViewController.h */,
-				297AD9601AD7D76100820411 /* OrdersListViewController.m */,
+				29D78DD21AD826B2006E67C1 /* OrderDetailViewController */,
+				29D78DC81AD82697006E67C1 /* OrdersListViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -293,6 +333,8 @@
 		297AD9531AD7CD7100820411 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2975532E1AD84943001BE272 /* UIImage+Additions.h */,
+				2975532F1AD84943001BE272 /* UIImage+Additions.m */,
 				297AD9541AD7CD7100820411 /* UIView+Additions.h */,
 				297AD9551AD7CD7100820411 /* UIView+Additions.m */,
 				297AD9671AD7D85900820411 /* UITableViewCell+Additions.h */,
@@ -304,6 +346,7 @@
 		297AD9571AD7CDEF00820411 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2975532A1AD84874001BE272 /* WebImageView */,
 				297AD9581AD7CDFD00820411 /* SearchView */,
 			);
 			path = Views;
@@ -319,15 +362,55 @@
 			path = SearchView;
 			sourceTree = "<group>";
 		};
-		297AD95E1AD7D76100820411 /* OrdersListTableCell */ = {
+		29D78DC81AD82697006E67C1 /* OrdersListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				297AD9621AD7D78300820411 /* OrdersListTableCell.h */,
-				297AD9631AD7D78300820411 /* OrdersListTableCell.m */,
-				297AD9641AD7D78300820411 /* OrdersListTableCell.xib */,
+				29D78DC91AD82697006E67C1 /* OrdersListTableCell */,
+				29D78DCD1AD82697006E67C1 /* OrdersListViewController.h */,
+				29D78DCE1AD82697006E67C1 /* OrdersListViewController.m */,
 			);
-			name = OrdersListTableCell;
-			path = OrdersListViewController/OrdersListTableCell;
+			path = OrdersListViewController;
+			sourceTree = "<group>";
+		};
+		29D78DC91AD82697006E67C1 /* OrdersListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				29D78DCA1AD82697006E67C1 /* OrdersListTableCell.h */,
+				29D78DCB1AD82697006E67C1 /* OrdersListTableCell.m */,
+				29D78DCC1AD82697006E67C1 /* OrdersListTableCell.xib */,
+			);
+			path = OrdersListTableCell;
+			sourceTree = "<group>";
+		};
+		29D78DD21AD826B2006E67C1 /* OrderDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				29D78DD61AD82C31006E67C1 /* OrderDetailCollectionCell */,
+				29D78DD31AD826DB006E67C1 /* OrderDetailViewController.h */,
+				29D78DD41AD826DB006E67C1 /* OrderDetailViewController.m */,
+			);
+			path = OrderDetailViewController;
+			sourceTree = "<group>";
+		};
+		29D78DD61AD82C31006E67C1 /* OrderDetailCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				297553311AD8E3F8001BE272 /* OrderDetailTableHeader */,
+				29D78DDA1AD8370A006E67C1 /* OrderDetailTableCell */,
+				29D78DD71AD82C58006E67C1 /* OrderDetailCollectionCell.h */,
+				29D78DD81AD82C58006E67C1 /* OrderDetailCollectionCell.m */,
+			);
+			path = OrderDetailCollectionCell;
+			sourceTree = "<group>";
+		};
+		29D78DDA1AD8370A006E67C1 /* OrderDetailTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				29D78DDB1AD8371D006E67C1 /* OrderDetailTableCell.h */,
+				29D78DDC1AD8371D006E67C1 /* OrderDetailTableCell.m */,
+				29D78DDE1AD83727006E67C1 /* OrderDetailTableCell.xib */,
+			);
+			path = OrderDetailTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +493,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D78DDF1AD83727006E67C1 /* OrderDetailTableCell.xib in Resources */,
 				297AD95D1AD7CE1400820411 /* SearchView.xib in Resources */,
-				297AD9661AD7D78300820411 /* OrdersListTableCell.xib in Resources */,
+				297553361AD8E412001BE272 /* OrderDetailTableHeader.xib in Resources */,
+				29D78DD01AD82697006E67C1 /* OrdersListTableCell.xib in Resources */,
 				290D6C2D1AD2FFBA00D1DF4D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,20 +518,26 @@
 				290D6C601AD3BE7C00D1DF4D /* Order+Extensions.m in Sources */,
 				290D6C881AD4568500D1DF4D /* Order.m in Sources */,
 				290D6C4D1AD301E700D1DF4D /* CoreDataManager.m in Sources */,
+				297553341AD8E408001BE272 /* OrderDetailTableHeader.m in Sources */,
 				290D6C851AD412F000D1DF4D /* Helpers.m in Sources */,
 				297AD9691AD7D85900820411 /* UITableViewCell+Additions.m in Sources */,
 				290D6C251AD2FFBA00D1DF4D /* PromUATest.xcdatamodeld in Sources */,
 				297AD95B1AD7CE0900820411 /* SearchView.m in Sources */,
+				2975532D1AD84886001BE272 /* WebImageView.m in Sources */,
+				29D78DD11AD82697006E67C1 /* OrdersListViewController.m in Sources */,
+				29D78DDD1AD8371D006E67C1 /* OrderDetailTableCell.m in Sources */,
 				290D6C761AD3C3F200D1DF4D /* NSManagedObject+Extensions.m in Sources */,
 				290D6C7E1AD3EFD700D1DF4D /* XMLParser.m in Sources */,
 				290D6C221AD2FFBA00D1DF4D /* AppDelegate.m in Sources */,
 				290D6C8B1AD456A100D1DF4D /* OrderItem.m in Sources */,
 				290D6C811AD3F17B00D1DF4D /* ParseOperation.m in Sources */,
-				297AD9611AD7D76100820411 /* OrdersListViewController.m in Sources */,
+				297553301AD84943001BE272 /* UIImage+Additions.m in Sources */,
 				290D6C1F1AD2FFBA00D1DF4D /* main.m in Sources */,
+				29D78DD51AD826DB006E67C1 /* OrderDetailViewController.m in Sources */,
 				297AD9561AD7CD7100820411 /* UIView+Additions.m in Sources */,
+				29D78DD91AD82C58006E67C1 /* OrderDetailCollectionCell.m in Sources */,
 				290D6C7A1AD3DC0E00D1DF4D /* NetworkManager.m in Sources */,
-				297AD9651AD7D78300820411 /* OrdersListTableCell.m in Sources */,
+				29D78DCF1AD82697006E67C1 /* OrdersListTableCell.m in Sources */,
 				290D6C541AD3AFBC00D1DF4D /* StorageManager.m in Sources */,
 				290D6C491AD2FFFD00D1DF4D /* DataRequest.m in Sources */,
 				290D6C631AD3BE8D00D1DF4D /* OrderItem+Extensions.m in Sources */,

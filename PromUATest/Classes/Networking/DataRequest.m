@@ -54,13 +54,14 @@
     return [self new];
 }
 
-+ (void)loadDataWithStringURL:(NSString *)stringURL
++ (DataRequest *)loadDataWithStringURL:(NSString *)stringURL
                      progress:(ProgressBlock)progress
                    completion:(CompletionBlock)completion
                  cacheEnabled:(BOOL)cacheEnabled
 {
     DataRequest *dataRequest = [DataRequest request];
     [dataRequest loadDataWithStringURL:stringURL progress:progress completion:completion cacheEnabled:cacheEnabled];
+    return dataRequest;
 }
 
 - (void)loadDataWithStringURL:(NSString *)stringURL

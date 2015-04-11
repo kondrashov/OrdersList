@@ -7,6 +7,7 @@
 //
 
 #import "OrdersListViewController.h"
+#import "OrderDetailViewController.h"
 #import "UITableViewCell+Additions.h"
 #import "UIView+Additions.h"
 #import "OrdersListTableCell.h"
@@ -36,15 +37,21 @@
     [self layoutViews];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.title = @"Заказы";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [self createObservers];
     [self setupView];
     [self setupSearchView];
     [self setupTable];
     [self loadData];
-    [self createObservers];
 }
 
 - (void)dealloc
@@ -65,6 +72,7 @@
     _ordersTableView.hidden = YES;
     _activityIndicator.hidden = NO;
     [_activityIndicator startAnimating];
+
     [self loadDataWithCompletion:^(BOOL isSuccess)
     {
         [self fetchDataWithCompletion:^{
@@ -97,7 +105,6 @@
         _ordersArray = [NSMutableArray array];
     
     [_ordersArray removeAllObjects];
-
     [Order asyncFetchObjectsByPredicate:nil sortKey:@"date" ascending:NO context:[Order moc] completion:^(NSArray *objects, NSError *error)
     {
         [_ordersArray addObjectsFromArray:objects];
@@ -122,7 +129,6 @@
 {
     self.navigationController.navigationBar.translucent = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.title = @"Заказы";
     
     if(!_activityIndicator)
         _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
@@ -207,7 +213,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [self didEndEntering];
+    Order *order = _ordersArray[indexPath.row];
+    if(order && [order isKindOfClass:[Order class]])
+    {
+        OrderDetailViewController *orderDetailVC = [[OrderDetailViewController alloc] initWithOrders:_ordersArray currentOrder:order];
+        [self.navigationController pushViewController:orderDetailVC animated:YES];
+    }
 }
 
 #pragma mark - Actions
@@ -254,7 +266,8 @@
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
 }
 
-- (BOOL)prefersStatusBarHidden {
+- (BOOL)prefersStatusBarHidden
+{
     return YES;
 }
 

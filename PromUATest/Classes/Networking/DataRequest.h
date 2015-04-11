@@ -16,7 +16,7 @@ typedef void (^CompletionBlock)(NSData *data, BOOL fromCache, NSError *error);
 
 + (instancetype)request;
 
-+ (void)loadDataWithStringURL:(NSString *)stringURL
++ (DataRequest *)loadDataWithStringURL:(NSString *)stringURL
                      progress:(ProgressBlock)progress
                    completion:(CompletionBlock)completion
                  cacheEnabled:(BOOL)cacheEnabled;
